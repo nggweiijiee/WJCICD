@@ -3,15 +3,17 @@ pool:
   demands: npm
 
 steps:
-- task: UiPathPack@5
+- task: uipath.vsts-uipath-package.uipath-pack.UiPathPack@4
+  displayName: 'UiPath Pack'
   inputs:
-    versionType: 'CurrentVersion'
-    projectJsonPath: 'project.json'
-    orchestratorConnection: 'WJCICD'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    versionType: CurrentVersion
+    projectJsonPath: project.json
+    splitOutput: false
+    orchestratorConnection: WJCICD
 
-- task: UiPathDeploy@5
+- task: uipath.vsts-uipath-package.uipath-deploy.UiPathDeploy@4
+  displayName: 'UiPath Deploy'
   inputs:
-    orchestratorConnection: 'WJCICD'
+    orchestratorConnection: WJCICD
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'WJDemo'
+    folderName: WJDemo
