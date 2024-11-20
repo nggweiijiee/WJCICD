@@ -1,0 +1,17 @@
+pool:
+  name: Azure Pipelines
+  demands: npm
+
+steps:
+- task: UiPathPack@5
+  inputs:
+    versionType: 'CurrentVersion'
+    projectJsonPath: 'project.json'
+    orchestratorConnection: 'WJCICD'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+
+- task: UiPathDeploy@5
+  inputs:
+    orchestratorConnection: 'WJCICD'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'WJDemo'
