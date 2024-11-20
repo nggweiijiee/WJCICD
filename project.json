@@ -1,0 +1,82 @@
+{
+  "name": "WJCICD_Tests",
+  "projectId": "dec81665-9d4d-467c-ad47-579ddfae6151",
+  "description": "Blank Process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.23.4]",
+    "UiPath.Mail.Activities": "[1.23.1]",
+    "UiPath.System.Activities.Runtime": "[24.10.3]",
+    "UiPath.Testing.Activities": "[24.10.0]",
+    "UiPath.UIAutomation.Activities.Runtime": "[24.10.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.1.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "db4323cd-3ad2-41b6-8948-2ad3b46cfa9c",
+        "testCaseType": "TestCase",
+        "fileName": "ACME_Login_TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f91be116-6ee0-4571-b911-050406c10cda",
+        "testCaseType": "TestCase",
+        "fileName": "ACME_Logout_TestCase.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "ACME_Login_TestCase.xaml",
+      "uniqueId": "db4323cd-3ad2-41b6-8948-2ad3b46cfa9c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "ACME_Logout_TestCase.xaml",
+      "uniqueId": "f91be116-6ee0-4571-b911-050406c10cda",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows",
+  "coverageMergeWorkflowPath": "CoverageMergeHelperWorkflow.xaml"
+}

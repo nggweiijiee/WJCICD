@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/abeamrpa/ab_dxcoe/testmanager_",
+  "defaultProject": {
+    "id": "07f217cd-7308-0000-2d10-0b4789793282",
+    "name": "WJCICD",
+    "key": "WCC"
+  }
+}
